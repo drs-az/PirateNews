@@ -3,12 +3,12 @@
   "name": "Pirate News",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "pirate_news_logo_192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "pirate_news_logo_512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
