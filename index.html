@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pirate News</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      background-color: black;
+      color: green;
+      font-family: "Courier New", Courier, monospace;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    .story {
+      border-bottom: 1px solid green;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+    .story h2 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .meta {
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    .meta span {
+      margin-right: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pirate News</h1>
+  
+  <!-- Story Template -->
+  <div class="story">
+    <h2>Story Title</h2>
+    <div class="meta">
+      <span class="date">Date: YYYY-MM-DD</span>
+      <span class="byline">By: Author Name</span>
+    </div>
+    <p>
+      Story body goes here. Write your pirate adventures and news stories in this template.
+    </p>
+  </div>
+  
+  <script>
+    // Register the service worker for offline functionality.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+      .then(function(registration) {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      })
+      .catch(function(error) {
+        console.log('ServiceWorker registration failed:', error);
+      });
+    }
+  </script>
+</body>
+</html>
